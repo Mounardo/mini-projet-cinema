@@ -1,12 +1,11 @@
 import { API_KEY, API_URL } from "./config.js";
 
-export async function searchMovies(title) {
+export async function searchMovies(title, page = 1) {
     const response = await fetch(
-        `${API_URL}?apikey=${API_KEY}&s=${encodeURIComponent(title)}`
+        `${API_URL}?apikey=${API_KEY}&s=${encodeURIComponent(title)}&page=${page}`
     );
 
     const data = await response.json();
-
     return data;
 }
 

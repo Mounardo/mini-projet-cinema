@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de films</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="search.html">Rechercher</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Rechercher un film</h1>
+        <input
+    type="search"
+    id="search-input"
+    placeholder="Entrez le titre d'un film"
+>
+<section>
+    <h2>Résultats</h2>
+
+    <div id="search-results">
+    </div>
+    <button id="load-more-search" type="button" hidden>
+    Charger plus de résultats
+</button>
+</section>
+    </main>
+    <script type="module" src="./js/search.js"></script>
+</body>
+</html>
