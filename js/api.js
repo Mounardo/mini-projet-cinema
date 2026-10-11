@@ -11,7 +11,7 @@ export async function searchMovies(title, page = 1) {
 
 export async function getMovieById(id) {
     const response = await fetch(
-        `${API_URL}?apikey=${API_KEY}&i=${id}&plot=short`
+        `${API_URL}?apikey=${API_KEY}&i=${id}&plot=full`
     );
 
     const data = await response.json();
