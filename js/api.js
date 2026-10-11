@@ -9,3 +9,13 @@ export async function searchMovies(title) {
 
     return data;
 }
+
+export async function getMovieById(id) {
+    const response = await fetch(
+        `${API_URL}?apikey=${API_KEY}&i=${id}&plot=short`
+    );
+
+    const data = await response.json();
+
+    return data;
+}
