@@ -19,3 +19,12 @@ export async function getMovieById(id) {
 
     return data;
 }
+export async function searchMoviesByYear(title, year, page = 1) {
+    const response = await fetch(
+        `${API_URL}?apikey=${API_KEY}&s=${encodeURIComponent(title)}&y=${year}&page=${page}`
+    );
+
+    const data = await response.json();
+
+    return data;
+}
