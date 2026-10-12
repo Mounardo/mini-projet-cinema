@@ -10,18 +10,52 @@
 <body>
     <header>
     <nav>
+    <a href="index.html" class="logo"><b>Ciné Green</b></a>
+
+    <div class="nav-links">
         <a href="index.html">Accueil</a>
         <a href="search.html">Rechercher</a>
-    </nav>
+    </div>
+</nav>
     </header>
+    <section class="hero">
+    <div class="hero-content">
+        <p class="hero-label">Découvrez votre prochain film</p>
+        <h1>Le cinéma à portée de clic.</h1>
+        <p>
+            Explorez des films, recherchez vos titres préférés
+            et découvrez toutes leurs informations.
+        </p>
+
+        <a href="search.html" class="hero-button">
+            Rechercher un film
+        </a>
+    </div>
+</section>
     <main>
     <section>
-        <h1>Films tendances</h1>
+        <div class="section-title">
+    <span></span>
+    <h1>Films tendances</h1>
+</div>
         <div id="movies-container">
         </div>
         <button id="load-more" type="button">Charger plus de films</button>
     </section>
 </main>
+<footer>
+    <div class="footer-content">
+        <a href="index.html" class="footer-logo">CinéFlow</a>
+
+        <p>
+            Découvrez, recherchez et explorez vos films préférés.
+        </p>
+
+        <p class="footer-credit">
+            Données fournies par OMDb API · Projet SUPINFO
+        </p>
+    </div>
+</footer>
 <script type="module" src="./js/index.js"></script>
 </body>
 </html>

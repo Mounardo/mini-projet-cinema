@@ -13,7 +13,26 @@ if (!movieId) {
     const movie = await getMovieById(movieId);
 
     if (movie.Response === "False") {
-        movieDetails.innerHTML = "<p>Film introuvable.</p>";
+        movieDetails.innerHTML = `
+    <article class="movie-card">
+        <img
+            class="movie-poster"
+            src="${movie.Poster}"
+            alt="${movie.Title}"
+        >
+
+        <div class="movie-info">
+            <h1>${movie.Title}</h1>
+
+            <p><strong>Genre :</strong> ${movie.Genre}</p>
+            <p><strong>Acteurs :</strong> ${movie.Actors}</p>
+            <p><strong>Note IMDb :</strong> ${movie.imdbRating}/10</p>
+            <p><strong>Sortie DVD :</strong> ${dvdDate}</p>
+
+            <p class="movie-plot">${movie.Plot}</p>
+        </div>
+    </article>
+`;
     } else {
 
         let dvdDate = movie.DVD;
@@ -31,7 +50,11 @@ if (!movieId) {
                 <h1>${movie.Title}</h1>
                 <p><strong>Genre :</strong> ${movie.Genre}</p>
                 <p><strong>Acteurs :</strong> ${movie.Actors}</p>
-                <p><strong>Note IMDb :</strong> ${movie.imdbRating}/10</p>
+                <p>
+    <span class="rating-badge">
+        IMDb ${movie.imdbRating}/10
+    </span>
+</p>
                 <p><strong>Sortie DVD :</strong> ${dvdDate}</p>
                 <p>${movie.Plot}</p>
             </article>
