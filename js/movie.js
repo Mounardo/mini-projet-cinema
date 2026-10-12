@@ -36,7 +36,5 @@ if (!movieId) {
                 <p>${movie.Plot}</p>
             </article>
         `;
-
-        console.log(movie);
     }
 }
