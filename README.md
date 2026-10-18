@@ -18,7 +18,7 @@ Application web réalisée dans le cadre d'un mini-projet SUPINFO.
 ## Technologies utilisées
 
 - HTML5
-- CSS3
+- CSS
 - JavaScript
 - API OMDb
 - Git
@@ -32,7 +32,7 @@ Application web réalisée dans le cadre d'un mini-projet SUPINFO.
 
 ## Lancement du projet
 
-Le projet doit être exécuté avec un serveur HTTP local, par exemple avec l'extension **Live Server** de Visual Studio Code.
+Le projet doit être exécuté avec un serveur HTTP local, par exemple avec l'extension **Live Server** de VS Code.
 
 ## API
 
@@ -41,3 +41,7 @@ Les informations sur les films proviennent de l'API OMDb.
 ## Auteur
 
 Mohamed Toihir Mounir
+
+## le lien GitHub vers mon dépôt
+
+https://github.com/Mounardo/mini-projet-cinema
